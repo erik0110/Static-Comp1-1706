@@ -49,7 +49,7 @@ p {
 }
 
 .description {
-  font-size: 16px;
+  font-size: 18px;
   margin-left: 20px;
   margin-right: 20px;
   display: block;
@@ -118,10 +118,10 @@ p {
   font-size: 12px;
   transition: 1s;
 }
-
+/*
 .big-box-describe {
   font-size: 12px;
-  transition: 1s;
+  transition: 1s;*/
 }
 
 .box:hover .box-describe {
@@ -130,12 +130,12 @@ p {
   cursor: pointer;
 }
 
-
+/*
 .box:hover .big-box-describe {
   transform: scale(1.15);
   padding-top: 25px;
   cursor: pointer;
-}
+}*/
 
 .box:hover {
   border-top: solid 8px #fff;
@@ -255,6 +255,17 @@ p {
 }
 
 @media (max-width: 1100px) {
+  /*.right-side {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+  }*/
+
+  .box-describe {
+    font-size: 10px;
+    transition: 1s;
+  }
+
   .left-side {
     width: 50%;
   }
@@ -264,11 +275,7 @@ p {
   }
 
   .name {
-    font-size: 25px;
-  }
-
-  .description {
-    font-size: 12px;
+    font-size: 28px;
   }
 
   .me,
@@ -284,11 +291,6 @@ p {
 
   .left-p {
     margin-left: 20px;
-  }
-
-  .box-describe {
-    font-size: 11px;
-    transition: 1s;
   }
 
   .box:hover .box-describe {
@@ -355,6 +357,16 @@ p {
   .about-me {
     margin-left: 40px;
   }
+}
+
+.box-describe {
+  /*font-size: 14px;*/
+  transition: 1s;
+}
+
+.box:hover .box-describe {
+  transform: scale(1.25);
+  padding-top: 25px;
 }
 
 @media (max-width: 625px) {
